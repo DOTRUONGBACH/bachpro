@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="mycanvas" width="578" height="200">
+
+</canvas>
+<script>
+    //bai 1: Cho danh sách các điểm thi ở trong một mảng.
+    // Hãy viết hàm findAvg() với đầu vào là một mảng điểm và đầu ra là điểm trung bình của danh sách điểm thi.
+
+
+    /*function findAvg(){
+        let s=0;
+      for(let i=0;i<array.length;i++){
+        s+=array[i];
+      }s=s/array.length;
+      return s
+    }
+    let array=[1,2,3,4]
+    alert(findAvg(array))*/
+    //bài 2: Viết hàm insertNumberToArray() nhận vào một mảng các số nguyên, một số nguyên x, và một số nguyên vị trí index.
+    // Hàm  trả về mảng ban đầu nếu vị trí index có giá trị nhỏ hơn 0 hoặc lớn hơn chiều dài mảng.
+    // Nếu không thì trả về mảng mới đã được thêm số x vào vị trí index.
+    /*  let array = [1, 3, 4, 5, -1];
+      let x = +prompt("nhập số nguyên x");
+      let index = +prompt("nhập vị trí index");
+      emptyarr = []
+      function insertNumberToArray(array,x,index) {
+              if (index < 0 || index > array.length) {
+                  alert(array);
+              } else {
+                  array.splice(index, 0, x);
+                  let newarray=array.concat(emptyarr)
+                  alert(newarray)
+              }
+          }
+      insertNumberToArray(array,x,index)*/
+
+    //bai 3:Viết hàm sumOfListPrime() nhận vào một số nguyên x , hàm trả về giá trị là tổng các số nguyên tố từ 0 cho tới x.
+    /* let x = +prompt("nhập vào số nguyên bất kỳ")
+
+     function sumOfListPrime(x) {
+         let s = 0;
+         for (let i = 2; i <= x; i++) {
+             let check = true
+             for (let j = 2; j < i; j++) {
+                 if (i % j == 0) {
+                     check = false;
+                     break;
+                 }
+             }
+             if (check == true) {
+                 s += i
+             }
+         }
+         return s
+     }
+
+     alert(sumOfListPrime(x)) */
+    //bai4 Hãy viết một chương trình để biểu diễn hình chữ nhật, với mô tả của lớp hình chữ nhật như sau:
+    let canvasok = document.getElementById("mycanvas");
+    let context = canvasok.getContext("2d");
+    context.strokeStyle="#ff0000"
+    context.rect(0, 0, 100, 50);
+    context.stroke()
+    context.fillStyle ="#ff0000"
+    context.fill()
+
+
+</script>
+
+
+</body>
+</html>
